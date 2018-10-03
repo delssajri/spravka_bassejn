@@ -2,11 +2,9 @@ body, html { height: 100%; padding: 0; margin: 0; }
 
 body {
 	font: 14px 'Istok Web', Arial, sans-serif;
-	min-width: 1200px;
 }
 
 .container {
-	width: auto;
 	margin: 0 auto;
 }
 
@@ -76,7 +74,7 @@ select {
 }
 
 .block_margin {
-	width: 1180px;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	padding: 10px;
@@ -86,6 +84,8 @@ select {
 	background: #002E63;
 	background-repeat: repeat-x;
 	background-size: auto 100%;
+
+	clear: both;
 }
 
 .header .block_margin {
@@ -101,9 +101,10 @@ select {
 	color: #fefefe;
     display: table-cell;
     font: 25px Arial;
-    width: 315px;
+    width: 40%;
     vertical-align: middle;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	text-align: left;
 }
 #logotip  {
     display: table-cell;
@@ -120,7 +121,7 @@ select {
     text-align: right;
     font: 14px Arial;
     display: table-cell;
-    width: 315px;
+    width: 40%;
     vertical-align: middle;
 }
 
@@ -451,7 +452,7 @@ select {
 
 @media screen and (max-width: 600px) {
 	.container {
-		width: 320px;
+		/* width: 320px; */
 	}
 
 	.in_toptable .title_website,
