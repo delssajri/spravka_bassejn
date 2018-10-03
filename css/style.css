@@ -466,4 +466,13 @@ select {
 		display: none;
 	}
 
+	.spravka_zoom .block_margin {
+		background-size: 100% auto;
+	}
+
+	.block_margin .right {
+		text-align: right;
+		width: 100%;
+	}
+
 }
