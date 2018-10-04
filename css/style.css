@@ -318,10 +318,6 @@ select {
     border-top: 10px solid #AF0202;
 }
 
-.text {
-	text-align: justify;
-}
-
 .copyrihgt {
 	background: #002E63;
 	background-repeat: repeat-x;
@@ -493,8 +489,8 @@ select {
 		padding-bottom: 170px;
 	}
 
-	.zakaz_to #ord {
-		width: 300px;
+	.text {
+		text-align: justify;
 	}
 
 	.zakaz_to #ord input[type="text"] {
@@ -504,16 +500,21 @@ select {
 
 	#metro,
 	.comment {
-		box-sizing: border-box;
+		box-sizing: border-box; 
 		width: 250px;
 	}
 
 	.zakaz_to #ord {
-		font-size: 14px;
+		width: auto;
+		font-size: 12px;
 	}
 
 	.zakaz_to .block_margin {
 		background: none;
+	}
+
+	.zakaz_to #ord .w_td {
+		width: 100px;
 	}
 
 
