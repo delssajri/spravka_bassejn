@@ -419,7 +419,7 @@ select {
 }
 
 .image_big {
-	cursor:url(images/plus.png), pointer;
+	cursor:url(../img/plus.png), pointer;
 	max-height:100px;
 }
 
@@ -449,7 +449,7 @@ select {
 	max-height:94%;
 	max-width:94%;
 	margin:1% 0 0 0;
-	cursor: url(images/minus.png), pointer;
+	cursor: url(../img/minus.png), pointer;
 }
 .tf{
 	text-align: center;
@@ -510,6 +510,10 @@ select {
 
 	.zakaz_to #ord {
 		font-size: 14px;
+	}
+
+	.zakaz_to .block_margin {
+		background: none;
 	}
 
 
