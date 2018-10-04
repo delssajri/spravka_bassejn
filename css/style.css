@@ -485,5 +485,13 @@ select {
 		padding-bottom: 170px;
 	}
 
+	.zakaz_to #ord {
+		width: 300px;
+	}
+
+	.zakaz_to #ord {
+		font-size: 9px;
+	}
+
 
 }
