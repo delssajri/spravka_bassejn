@@ -101,7 +101,8 @@ select {
 	color: #fefefe;
     display: table-cell;
     font: 25px Arial;
-    width: 40%;
+	width: 40%;
+	padding-left: 50px;
     vertical-align: middle;
 	text-transform: uppercase;
 	text-align: left;
@@ -121,7 +122,8 @@ select {
     text-align: right;
     font: 14px Arial;
     display: table-cell;
-    width: 40%;
+	width: 40%;
+	padding-right: 50px;
     vertical-align: middle;
 }
 
@@ -133,7 +135,9 @@ select {
 }
 
 .spravka_zoom .block_margin {
+	box-sizing: border-box;
 	height: 250px;
+	padding: 0 60px;
 	background: url(../img/doctors.jpg);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
@@ -227,6 +231,11 @@ select {
 	font: bold 14px Helvetica;
 }
 
+.block_margin__text {
+	text-align: center;
+	padding: 0 20px;
+}
+
 .prm div img {
 	height: 80px;
 	margin: 20px 0 20px;
@@ -240,7 +249,7 @@ select {
 }
 
 .zakaz_to .block_margin {
-	background: url(images/zakaz_to.png);
+	background: url(../img/zakaz_to.png);
 	background-size: auto; 
 	background-repeat: no-repeat; 
 	background-position:  right 25px;
@@ -473,6 +482,8 @@ select {
 	.block_margin .right {
 		text-align: right;
 		width: 100%;
+		padding-bottom: 170px;
 	}
+
 
 }

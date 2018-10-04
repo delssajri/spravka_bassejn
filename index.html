@@ -14,6 +14,7 @@
 	<script src="js/script.js"></script>
 </head>
 <body> 
+	<header class="page-header">
 		<div class="container">
 			<div class="header">				
 				<div class="block_margin">
@@ -50,6 +51,386 @@
 				</div>
 			</div>
 		</div>
-
+	</header>
+	<main class="page-main">
+		<div class="container">
+				<div class="prm">
+					<div class="block_margin">
+						<h2>Наши преимущества</h2>
+						<div>
+							<img src="img/fast.png" alt="Оперативность" /><br />
+								Оперативность 24 часа
+						</div>
+						<div>
+							<img src="img/without_you.png" alt="присутствие не требуется" /><br />
+								Присутствие не требуется
+						</div>
+						<div>
+							<img src="img/metro.png" alt="Доставка до метро" /><br />
+								Бесплатная доставка до метро
+						</div>
+						<div>
+							<img src="img/self_delivery.png" alt="Скидка при самовывозе" /><br />
+								Скидка при самовывозе
+						</div>
+					</div>
+				</div>
+				<div class="text_sl">
+					<div class="block_margin">
+							<p class="block_margin__text">Доставка медицинских справок для бассейна курьером: бесплатно до ЛЮБОЙ станции метро, платно от 100 до 
+							200 руб. по Москве (зависит от доступности адреса). Справка в бассейн, которая позволит Вам 
+							заниматься плаванием полгода!</p>
+					</div>
+				</div>
+				<div class="zakaz_to">
+					<div class="block_margin" id="order">
+						<h2>Заказать справку</h2>
+						<form action="" method="post" id="ord">
+							<table>
+								<tbody><tr>
+									<td class="w_td">Количество:</td>
+									<td class="w_auto">
+										<select name="kol" id="qty">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+											<option>7</option>
+											<option>8</option>
+											<option>9</option>
+											<option>10</option>
+											<option>&gt;10</option>
+										</select>
+										&nbsp;Заполненная?&nbsp;
+												<input type="radio" value="0" name="blank" id="t-form" onclick="$(&#39;#fill&#39;).show();" /> Да &nbsp; 
+												<input checked="checked" type="radio" value="1" name="blank" id="t-form" onclick="$(&#39;#fill&#39;).hide();" /> Нет
+											
+									</td>
+								</tr>
+								</tbody>
+							</table>
+								<table id="fill">
+									<tbody><tr>
+										<td class="cls_2" colspan="2"><p>Информация для справки:</p></td>
+									</tr>
+									<tr>
+										<td class="w_td">ФИО</td>
+										<td><input type="text" name="fio" value="" /></td>
+									</tr>
+									<tr>
+										<td>Дата рождения</td>
+										<td><input type="text" name="birth" class="birthday" value="" /></td>
+									</tr>
+									<tr>
+										<td>Дата выдачи справки</td>
+										<td><input type="text" name="when" class="datepicker" value="" /></td>
+									</tr>
+								</tbody></table>
+								<table>
+									<tbody><tr>
+										<td class="w_td cls_2" colspan="2"><p>Информация о заказе: </p></td>
+									</tr>
+									<tr>
+										<td class="w_td">Ваше имя <span>*</span> : </td>
+										<td><input type="text" name="name" id="name" value="" /></td>
+									</tr>
+									<tr>
+										<td>Ваш телефон <span>*</span> : </td>
+										<td><input type="text" value="" name="header_tel" id="phone" value="" /></td>
+									</tr>
+									<tr>
+										<td class="cls_2" colspan="2">
+											<input type="radio" name="dost" value="1" onclick="$(&#39;#addr1&#39;).hide(); $(&#39;#metro_st1&#39;).hide();" /> САМОВЫВОЗ метро Таганская (-100 руб)<br />
+											<input type="radio" name="dost" value="2" onclick="$(&#39;#addr1&#39;).hide();  $(&#39;#metro_st1&#39;).show();" checked="checked" /> Встреча в метро или у метро (БЕСПЛАТНО)<br />
+											<input type="radio" name="dost" value="3" onclick="$(&#39;#addr1&#39;).show(); $(&#39;#metro_st1&#39;).show();" /> Доставка по адресу до 10 мин пешком (+100 руб)<br />
+											<input type="radio" name="dost" value="4" onclick="$(&#39;#addr1&#39;).show(); $(&#39;#metro_st1&#39;).show(); " /> Доставка по адресу более 10 мин пешком (+200 руб)
+										</td>
+									</tr>
+									<tr id="metro_st1">
+										<td>Ближайшая станция метро <span>*</span> : </td>
+										<td>
+											<select name="metro" id="metro">
+											<option value="Выберите метро">Выберите метро</option>
+											<option value="Авиамоторная">Авиамоторная</option>
+											<option value="Автозаводская">Автозаводская</option>
+											<option value="Академическая">Академическая</option>
+											<option value="Александровский сад">Александровский сад</option>
+											<option value="Алексеевская">Алексеевская</option>
+											<option value="Алтуфьево">Алтуфьево</option>
+											<option value="Аннино">Аннино</option>
+											<option value="Арбатская">Арбатская</option>
+											<option value="Аэропорт">Аэропорт</option>
+											<option value="Бабушкинская">Бабушкинская</option>
+											<option value="Багратионовская">Багратионовская</option>
+											<option value="Баррикадная">Баррикадная</option>
+											<option value="Бауманская">Бауманская</option>
+											<option value="Беговая">Беговая</option>
+											<option value="Белорусская">Белорусская</option>
+											<option value="Беляево">Беляево</option>
+											<option value="Бибирево">Бибирево</option>
+											<option value="Библиотека имени Ленина">Библиотека имени Ленина</option>
+											<option value="Битцевский парк">Битцевский парк</option>
+											<option value="Боровицкая">Боровицкая</option>
+											<option value="Ботанический сад">Ботанический сад</option>
+											<option value="Братиславская">Братиславская</option>
+											<option value="Бульвар адмирала Ушакова">Бульвар адмирала Ушакова</option>
+											<option value="Бульвар Дмитрия Донского">Бульвар Дмитрия Донского</option>
+											<option value="Бунинская аллея">Бунинская аллея</option>
+											<option value="Варшавская">Варшавская</option>
+											<option value="ВДНХ">ВДНХ</option>
+											<option value="Владыкино">Владыкино</option>
+											<option value="Водный стадион">Водный стадион</option>
+											<option value="Войковская">Войковская</option>
+											<option value="Волгоградский проспект">Волгоградский проспект</option>
+											<option value="Волжская">Волжская</option>
+											<option value="Воробьёвы горы">Воробьёвы горы</option>
+											<option value="Выставочный центр">Выставочный центр</option>
+											<option value="Выхино">Выхино</option>
+											<option value="Деловой центр">Деловой центр</option>
+											<option value="Динамо">Динамо</option>
+											<option value="Дмитровская">Дмитровская</option>
+											<option value="Добрынинская">Добрынинская</option>
+											<option value="Домодедовская">Домодедовская</option>
+											<option value="Дубровка">Дубровка</option>
+											<option value="Измайловская">Измайловская</option>
+											<option value="Калужская">Калужская</option>
+											<option value="Кантемировская">Кантемировская</option>
+											<option value="Каховская">Каховская</option>
+											<option value="Каширская">Каширская</option>
+											<option value="Киевская">Киевская</option>
+											<option value="Китай-город">Китай-город</option>
+											<option value="Кожуховская">Кожуховская</option>
+											<option value="Коломенская">Коломенская</option>
+											<option value="Комсомольская">Комсомольская</option>
+											<option value="Коньково">Коньково</option>
+											<option value="Красногвардейская">Красногвардейская</option>
+											<option value="Краснопресненская">Краснопресненская</option>
+											<option value="Красносельская">Красносельская</option>
+											<option value="Красные ворота">Красные ворота</option>
+											<option value="Крестьянская застава">Крестьянская застава</option>
+											<option value="Кропоткинская">Кропоткинская</option>
+											<option value="Крылатское">Крылатское</option>
+											<option value="Кузнецкий мост">Кузнецкий мост</option>
+											<option value="Кузьминки">Кузьминки</option>
+											<option value="Кунцевская">Кунцевская</option>
+											<option value="Курская">Курская</option>
+											<option value="Кутузовская">Кутузовская</option>
+											<option value="Ленинский проспект">Ленинский проспект</option>
+											<option value="Лубянка">Лубянка</option>
+											<option value="Люблино">Люблино</option>
+											<option value="Марксистская">Марксистская</option>
+											<option value="Марьино">Марьино</option>
+											<option value="Маяковская">Маяковская</option>
+											<option value="Медведково">Медведково</option>
+											<option value="Международная">Международная</option>
+											<option value="Менделеевская">Менделеевская</option>
+											<option value="Молодёжная">Молодёжная</option>
+											<option value="Нагатинская">Нагатинская</option>
+											<option value="Нагорная">Нагорная</option>
+											<option value="Нахимовский проспект">Нахимовский проспект</option>
+											<option value="Новогиреево">Новогиреево</option>
+											<option value="Новокузнецкая">Новокузнецкая</option>
+											<option value="Новослободская">Новослободская</option>
+											<option value="Новые Черёмушки">Новые Черёмушки</option>
+											<option value="Октябрьская">Октябрьская</option>
+											<option value="Октябрьское поле">Октябрьское поле</option>
+											<option value="Орехово">Орехово</option>
+											<option value="Отрадное">Отрадное</option>
+											<option value="Охотный ряд">Охотный ряд</option>
+											<option value="Павелецкая">Павелецкая</option>
+											<option value="Парк культуры">Парк культуры</option>
+											<option value="Парк Победы">Парк Победы</option>
+											<option value="Партизанская">Партизанская</option>
+											<option value="Первомайская">Первомайская</option>
+											<option value="Перово">Перово</option>
+											<option value="Петровско-Разумовская">Петровско-Разумовская</option>
+											<option value="Печатники">Печатники</option>
+											<option value="Пионерская">Пионерская</option>
+											<option value="Планерная">Планерная</option>
+											<option value="Площадь Ильича">Площадь Ильича</option>
+											<option value="Площадь Революции">Площадь Революции</option>
+											<option value="Полежаевская">Полежаевская</option>
+											<option value="Полянка">Полянка</option>
+											<option value="Пражская">Пражская</option>
+											<option value="Преображенская площадь">Преображенская площадь</option>
+											<option value="Пролетарская">Пролетарская</option>
+											<option value="Проспект Вернадского">Проспект Вернадского</option>
+											<option value="Проспект Мира">Проспект Мира</option>
+											<option value="Пушкинская">Пушкинская</option>
+											<option value="Речной вокзал">Речной вокзал</option>
+											<option value="Рижская">Рижская</option>
+											<option value="Римская">Римская</option>
+											<option value="Рязанский проспект">Рязанский проспект</option>
+											<option value="Савёловская">Савёловская</option>
+											<option value="Свиблово">Свиблово</option>
+											<option value="Севастопольская">Севастопольская</option>
+											<option value="Семёновская">Семёновская</option>
+											<option value="Серпуховская">Серпуховская</option>
+											<option value="Смоленская">Смоленская</option>
+											<option value="Сокол">Сокол</option>
+											<option value="Сокольники">Сокольники</option>
+											<option value="Спортивная">Спортивная</option>
+											<option value="Сретенский бульвар">Сретенский бульвар</option>
+											<option value="Строгино">Строгино</option>
+											<option value="Студенческая">Студенческая</option>
+											<option value="Сухаревская">Сухаревская</option>
+											<option value="Сходненская">Сходненская</option>
+											<option value="Таганская">Таганская</option>
+											<option value="Тверская">Тверская</option>
+											<option value="Театральная">Театральная</option>
+											<option value="Текстильщики">Текстильщики</option>
+											<option value="Телецентр">Телецентр</option>
+											<option value="Тёплый Стан">Тёплый Стан</option>
+											<option value="Тимирязевская">Тимирязевская</option>
+											<option value="Третьяковская">Третьяковская</option>
+											<option value="Трубная">Трубная</option>
+											<option value="Тульская">Тульская</option>
+											<option value="Тургеневская">Тургеневская</option>
+											<option value="Тушинская">Тушинская</option>
+											<option value="Улица 1905 года">Улица 1905 года</option>
+											<option value="Улица Академика Королёва">Улица Академика Королёва</option>
+											<option value="Улица Академика Янгеля">Улица Академика Янгеля</option>
+											<option value="Улица Горчакова">Улица Горчакова</option>
+											<option value="Улица Милашенкова">Улица Милашенкова</option>
+											<option value="Улица Подбельского">Улица Подбельского</option>
+											<option value="Улица Сергея Эйзенштейна">Улица Сергея Эйзенштейна</option>
+											<option value="Улица Скобелевская">Улица Скобелевская</option>
+											<option value="Улица Старокачаловская">Улица Старокачаловская</option>
+											<option value="Университет">Университет</option>
+											<option value="Филёвский парк">Филёвский парк</option>
+											<option value="Фили">Фили</option>
+											<option value="Фрунзенская">Фрунзенская</option>
+											<option value="Царицыно">Царицыно</option>
+											<option value="Цветной бульвар">Цветной бульвар</option>
+											<option value="Черкизовская">Черкизовская</option>
+											<option value="Чертановская">Чертановская</option>
+											<option value="Чеховская">Чеховская</option>
+											<option value="Чистые пруды">Чистые пруды</option>
+											<option value="Чкаловская">Чкаловская</option>
+											<option value="Шаболовская">Шаболовская</option>
+											<option value="Шоссе Энтузиастов">Шоссе Энтузиастов</option>
+											<option value="Щёлковская">Щёлковская</option>
+											<option value="Щукинская">Щукинская</option>
+											<option value="Электрозаводская">Электрозаводская</option>
+											<option value="Юго-Западная">Юго-Западная</option>
+											<option value="Южная">Южная</option>
+											<option value="Ясенево">Ясенево</option>
+											</select>
+										</td>
+									</tr>
+									<tr id="addr1" style="display: none;">
+										<td>Адрес доставки <span>*</span> : </td>
+										<td><input name="address" type="text" id="addr" value="" /></td>
+									</tr>
+									<tr class="w_auto">
+										<td>Дата доставки: </td>
+										<td>
+											<input name="date_dliver" type="text" value="" />
+										</td>
+									</tr>
+									<tr class="w_auto">
+										<td>Время доставки  : </td>
+										<td>с&nbsp; <select name="time_deliver_from">
+												<option>10</option>
+												<option>11</option>
+												<option>12</option>
+												<option>13</option>
+												<option>14</option>
+												<option>15</option>
+												<option>16</option>
+												<option>17</option>
+												<option>18</option>
+												<option>19</option>
+												<option>20</option>
+											</select> &nbsp;до&nbsp; <select name="time_deliver_to">
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+											<option>13</option>
+											<option>14</option>
+											<option>15</option>
+											<option>16</option>
+											<option>17</option>
+											<option>18</option>
+											<option>19</option>
+											<option selected="selected">20</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Ваш e-mail</td>
+										<td><input type="text" name="email" value="" /></td>
+									</tr>
+									<tr>
+										<td class="w_td">Комментарий к заказу</td>
+										<td>
+											<textarea class="comment" rows="5" cols="10" name="comment"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="text" name="check" value="" style="width: 10px; visibility: hidden;" value="" /></td>
+										<td class="submit"><input type="submit" value="Отправить заказ" name="submit_ord" /></td>
+									</tr>
+								</tbody></table>
+							</form>
+							<p>Курьер привезёт Вам бланки справок с печатями, подписями врачей и заключением об отсутствии противопоказаний для посещения плавательного бассейна. ФИО, год рождения и дату начала действия Вы вписываете сами (либо вписывает курьер при встрече).</p>
+						</div>
+					</div>
+					<div class="glav_block">
+						<div class="block_margin">
+							<h1>Справка в бассейн 300 рублей с доставкой по Москве и Санкт-Петербургу</h1>
+							<p><strong>Одна справка в бассейн 300 рублей, 2 за 500 руб., 3 за 700 руб., 4 и более по 200 рублей.</strong></p>
+							<p>Когда каждый день проводишь в бешеном городском ритме, тратя свои нервы по любым пустяковым поводам, как никогда хочется найти такое занятие, вовлечение в которое позволит Вам не задумываться о повседневных проблемах, оградиться от мирское суеты и просто полостью погрузиться в него с головой. Многие выбирают таким утешением спортивные занятия или занятия физическим трудом. Кто-то ходит на модную йогу, кто-то катается на велосипеде, кто-то предпочитает совмещать приятное с полезным и бегать утром, выгуливая собаку. Ну а кто-то холодными зимними вечерами хочет насладиться по большей части летним занятием - плаванием. Так зачем тянуть, ведь можно записаться в городской общественный бассейн!</p>
+							<h2>Что необходимо иметь при себе для того, чтобы посещать городской бассейн?</h2>
+							<p>Кроме необходимых для плавания предметов, таких, как купальные принадлежности, вещи личной гигиены, полотенце и резиновая обувь, Вы просто обязаны будете предоставить администрации бассейна справку в бассейн. Нет никаких сложностей в том, чтобы изготовить ее в городской районной поликлинике, разве что, кроме того, что Вам необходимо быть заранее готовым к тому, чтобы ожидать ее получения от одного до нескольких дней.</p>
+							<p>Чтобы получить медсправку для бассейна, Вы должны сделать следующее:</p>
+							<ol>
+							<li>Во-первых, записаться к Вашему терапевту, чтобы получить официальное направление для посещения других специалистов, а так же для сдачи анализов.</li>
+							<li>Во-вторых, Вам потребуется освидетельствование дерматолога на отсутствие кожных заболеваний, которые легко могут передаться другим через контакт с водой.</li>
+							<li>В-третьих, если Вы являетесь особью женского пола, Вы на обязательной основе должны будете предоставить свидетельство от гинеколога об отсутствии венерических заболеваний.</li>
+							<li>В-четвертых, сдать анализ крови на так называемую Реакцию Вассермана (RW) для того, чтобы исключить с большей вероятностью наличие страшного смертельного заболевания - сифилиса.</li>
+							<li>В-пятых, нужно будет сдать соответствующий анализ, чтобы подтвердить отсутствие в Вашем организме паразитирующих организмов (как правило, определяется с помощью соскоба или мазка).</li>
+							</ol>
+							<p>Имейте в виду, что это еще не вся процедура. После прохождения всего вышеперечисленного, нужно будет снова записаться к терапевту за непосредственной выпиской справки для бассейна. Только он имеет право окончательно заверить справку и выписать Вам разрешение на посещение плавательного бассейна.</p>
+							<p>Имейте в виду, что все эти процедуры можно с легкостью избежать, если Вы обратитесь к нам за помощью в изготовлении справки для бассейна. У нас такая услуга бодет стоить Вам всего лишь каких-то 300 руб., но Вы получите официально заверенный документ, не тратя на его изготовление больше, чем 2 минуты Вашего свободного времени!</p>
+							<p>От Вас потребуется указать следующую информацию: Ваше Ф.И.О., день рождения, фактический адрес проживания, если имеете полис медстрахования - его номер, а так же телефон, на который позвонит наш менеджер, когда справка изготовится.</p>
+							<h2>Услуги для наших клиентов</h2>
+							<p>Мы делаем справки в бассейн уже долгое время, и нам не поступил ни один звонок с какой-либо жалобой. Обращаясь к нам, Вы получаете гарантированно высокое качество оказанных услуг, быстрое изготовление справки в бассейн (от 2 часов до 24 часов) и доставку до любого указанного адреса. Мы доставим Вам официальный медицинский документ, который будет заверен по всем существующим государственным стандартам, а именно - с печатью зарегистрированного медицинского учреждения, а так же с подписью терапевта. Также, у нас есть крайне приятная новость для клиентов, которым требуется больше одной справки в бассейн: для заказа 1+ предусматриваются скидки.</p>
+							<p>Обратившись к нам, Вы получаете уверенность и качество!</p>
+						</div>
+					</div>
+				</div>
+				</main>
+				<footer class="page-footer">
+					<div class="container">
+					<div class="copyrihgt">
+						<div class="block_margin">
+							<div class="tf">
+								<p>Остались вопросы? Звоните по телефону</p>
+								<p class="tele">+7 (495) 975-93-54</p>
+							</div>
+							<p><a href="http://xn----7sbabedz6ad0bmmlja.xn--p1ai/#order" class="button">Заказать справку в бассейн</a></p>
+							<p class="counter"><script src="/js/counter.js" type="text/javascript"></script></p>
+						</div>
+					</div>	
+				<div id="call_tel_form" style="display: none;">
+					<div id="call_tel_form_in">
+						<div id="zakr_mod"><img src="/images/close_mod.png" alt=""></div>
+						<div id="call_tel_h2">Обратный звонок</div>
+						<div class="div_form">
+							<form action="/" method="post">
+								<div><label>Ваше имя</label> <input type="text" name="name" value="" value="" /></div>
+								<div><label>Моб. телефон</label> <input type="text" name="phone" value="" class="phones_input" value="" /></div>
+								<div class="submit"> <input type="submit" name="submit" value="Отправить" /></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+				</footer>
+		</div>
+	</main>
 </body>
 </html>
