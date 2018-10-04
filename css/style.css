@@ -461,7 +461,7 @@ select {
 
 @media screen and (max-width: 600px) {
 	.container {
-		/* width: 320px; */
+		width: 320px;
 	}
 
 	.in_toptable .title_website,
@@ -495,13 +495,13 @@ select {
 
 	.zakaz_to #ord input[type="text"] {
 		box-sizing: border-box;
-		width: 250px;
+		width: 200px;
 	}
 
 	#metro,
 	.comment {
 		box-sizing: border-box; 
-		width: 250px;
+		width: 200px;
 	}
 
 	.zakaz_to #ord {
@@ -513,9 +513,9 @@ select {
 		background: none;
 	}
 
-	.zakaz_to #ord .w_td {
-		width: 100px;
-	}
+	/* .zakaz_to #ord .w_td {
+		width: 70px;
+	} */
 
 
 }
