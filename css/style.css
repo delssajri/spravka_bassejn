@@ -318,6 +318,10 @@ select {
     border-top: 10px solid #AF0202;
 }
 
+.text {
+	text-align: justify;
+}
+
 .copyrihgt {
 	background: #002E63;
 	background-repeat: repeat-x;
@@ -494,11 +498,18 @@ select {
 	}
 
 	.zakaz_to #ord input[type="text"] {
+		box-sizing: border-box;
+		width: 250px;
+	}
+
+	#metro,
+	.comment {
+		box-sizing: border-box;
 		width: 250px;
 	}
 
 	.zakaz_to #ord {
-		font-size: 9px;
+		font-size: 14px;
 	}
 
 
