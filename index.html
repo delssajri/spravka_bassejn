@@ -85,7 +85,7 @@
 				<div class="zakaz_to">
 					<div class="block_margin" id="order">
 						<h2>Заказать справку</h2>
-						<form action="" method="post" id="ord">
+						<form action="/" method="post" id="ord">
 							<table class="type_spr">
 								<tbody><tr>
 									<td class="w_td">Количество:</td>
@@ -107,8 +107,8 @@
 									</tr>
 									<tr><td class="w_td">Заполненная?</td>
 										<td class="w_auto">
-											<input type="radio" value="0" name="blank" id="t-form" onclick="$(&#39;#fill&#39;).show();" /> Да &nbsp; 
-											<input checked="checked" type="radio" value="1" name="blank" id="t-form" onclick="$(&#39;#fill&#39;).hide();" /> Нет	
+											<input type="radio" value="0" name="blank" onclick="$(&#39;#fill&#39;).show();" /> Да &nbsp; 
+											<input checked="checked" type="radio" value="1" name="blank" onclick="$(&#39;#fill&#39;).hide();" /> Нет	
 									    </td>
 								    </tr>
 								</tbody>
@@ -143,7 +143,7 @@
 									</tr>
 									<tr>
 										<td>Ваш телефон <span>*</span> : </td>
-										<td><input type="text" value="" name="header_tel" id="phone" value="" /></td>
+										<td><input type="text" name="header_tel" id="phone" value="" /></td>
 									</tr>
 									<tr>
 										<td class="cls_2" colspan="2">
@@ -377,7 +377,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><input type="text" name="check" value="" style="width: 10px; visibility: hidden;" value="" /></td>
+										<td><input type="text" name="check" style="width: 10px; visibility: hidden;" value="" /></td>
 										<td class="submit"><input type="submit" value="Отправить заказ" name="submit_ord" /></td>
 									</tr>
 								</tbody>
@@ -412,6 +412,7 @@
 						<p class="text">Обратившись к нам, Вы получаете уверенность и качество!</p>
 					</div>
 				</div>
+		</div>
 	</main>
 	<footer class="page-footer">
 		<div class="container">
