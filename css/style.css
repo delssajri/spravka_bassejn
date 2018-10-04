@@ -460,10 +460,6 @@ select {
 }
 
 @media screen and (max-width: 600px) {
-	.container {
-		width: 320px;
-	}
-
 	.in_toptable .title_website,
 	.in_toptable .text_top,
 	.block_margin {
@@ -512,10 +508,4 @@ select {
 	.zakaz_to .block_margin {
 		background: none;
 	}
-
-	/* .zakaz_to #ord .w_td {
-		width: 70px;
-	} */
-
-
 }
